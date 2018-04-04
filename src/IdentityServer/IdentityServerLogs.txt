@@ -1,0 +1,1595 @@
+2018-04-03 17:42:53.371 +01:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 17:42:53
+2018-04-03 17:42:53.400 +01:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 17:42:53
+2018-04-03 17:42:55.807 +01:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 17:42:55.986 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 17:42:56.519 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 17:42:56.864 +01:00 [INF] Authorization failed for user: null.
+2018-04-03 17:42:56.873 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-04-03 17:42:56.877 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-04-03 17:42:57.478 +01:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 17:42:57.482 +01:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 623.5813ms
+2018-04-03 17:42:57.488 +01:00 [INF] Request finished in 976.6641ms 302 
+2018-04-03 17:45:52.151 +01:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 17:45:52
+2018-04-03 17:45:52.180 +01:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 17:45:52
+2018-04-03 17:45:54.096 +01:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 17:45:54.288 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 17:45:54.617 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 17:45:54.862 +01:00 [INF] Authorization failed for user: null.
+2018-04-03 17:45:54.870 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-04-03 17:45:54.873 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-04-03 17:45:55.383 +01:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 17:45:55.386 +01:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 528.1298ms
+2018-04-03 17:45:55.391 +01:00 [INF] Request finished in 778.6785ms 302 
+2018-04-03 17:48:54.562 +01:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 17:48:54
+2018-04-03 17:48:54.593 +01:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 17:48:54
+2018-04-03 17:48:56.363 +01:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 17:48:56.525 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 17:48:56.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 17:48:57.159 +01:00 [INF] Authorization failed for user: null.
+2018-04-03 17:48:57.167 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-04-03 17:48:57.170 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-04-03 17:48:57.631 +01:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 17:48:57.634 +01:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 478.94140000000004ms
+2018-04-03 17:48:57.640 +01:00 [INF] Request finished in 743.5718ms 302 
+2018-04-03 17:49:13.214 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/signin-oidc application/x-www-form-urlencoded 1844
+2018-04-03 17:49:13.397 +01:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: sub claim is missing
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AssertRequiredClaims(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 119
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AugmentPrincipal(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 80
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.<SignInAsync>d__7.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 68
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 17:49:13.525 +01:00 [INF] Request finished in 310.7956ms 500 text/html; charset=utf-8
+2018-04-03 17:49:13.617 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 17:49:13.620 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 17:49:13.627 +01:00 [INF] Request finished in 9.8645ms 200 image/x-icon
+2018-04-03 17:54:49.537 +01:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 17:54:49
+2018-04-03 17:54:49.563 +01:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 17:54:49
+2018-04-03 17:54:51.337 +01:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 17:54:51.494 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 17:54:52.014 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 17:54:52.343 +01:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 17:54:54.467 +01:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 17:54:54.787 +01:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 2525.4617000000003ms
+2018-04-03 17:54:54.791 +01:00 [INF] Request finished in 2781.7175ms 200 text/html; charset=utf-8
+2018-04-03 17:54:54.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 17:54:54.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 17:54:54.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 17:54:54.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 17:54:54.817 +01:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 17:54:54.817 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 17:54:54.817 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 17:54:54.817 +01:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 17:54:54.821 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 17:54:54.821 +01:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 17:54:54.822 +01:00 [INF] Request finished in 8.7517ms 200 text/css
+2018-04-03 17:54:54.846 +01:00 [INF] Request finished in 16.2969ms 200 image/png
+2018-04-03 17:54:54.908 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 17:54:54.908 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 17:54:54.909 +01:00 [INF] Request finished in 95.3815ms 200 application/javascript
+2018-04-03 17:54:54.909 +01:00 [INF] Request finished in 94.7574ms 200 image/jpeg
+2018-04-03 17:54:54.909 +01:00 [INF] Request finished in 94.8877ms 200 application/javascript
+2018-04-03 17:54:54.942 +01:00 [INF] Request finished in 33.7936ms 200 text/css
+2018-04-03 17:55:10.907 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/signin  
+2018-04-03 17:55:10.912 +01:00 [INF] Request finished in 4.1864ms 404 
+2018-04-03 17:55:15.761 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 17:55:15.782 +01:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 17:55:15.783 +01:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 17:55:15.784 +01:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 22.604200000000002ms
+2018-04-03 17:55:15.785 +01:00 [INF] Request finished in 24.0736ms 200 text/html; charset=utf-8
+2018-04-03 17:56:33.253 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Index  
+2018-04-03 17:56:33.262 +01:00 [INF] Request finished in 9.3456ms 404 
+2018-04-03 17:56:38.836 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/signin-oidc  
+2018-04-03 17:56:38.845 +01:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 17:56:38.845 +01:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 17:56:38.847 +01:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 17:56:38.938 +01:00 [INF] Request finished in 101.8594ms 500 text/html; charset=utf-8
+2018-04-03 18:00:17.568 +01:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 18:00:17
+2018-04-03 18:00:17.596 +01:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 18:00:17
+2018-04-03 18:00:19.335 +01:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 18:00:19.511 +01:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 18:00:19.986 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 18:00:20.105 +01:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 18:00:20.105 +01:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 18:00:20.107 +01:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 18:00:20.245 +01:00 [INF] Request finished in 263.1672ms 500 text/html; charset=utf-8
+2018-04-03 19:34:37.738 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 19:34:37
+2018-04-03 19:34:37.765 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 19:34:37
+2018-04-03 19:34:39.545 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 19:34:39.697 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 19:34:40.202 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 19:34:40.325 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 19:34:40.325 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 19:34:40.327 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:34:40.456 +02:00 [INF] Request finished in 258.8009ms 500 text/html; charset=utf-8
+2018-04-03 19:34:49.081 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:34:49.348 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 19:34:51.967 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 19:34:52.389 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 3144.0408ms
+2018-04-03 19:34:52.391 +02:00 [INF] Request finished in 3309.9503ms 200 text/html; charset=utf-8
+2018-04-03 19:34:56.824 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=OpenIdConnect  
+2018-04-03 19:34:56.867 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["OpenIdConnect",""]) - ModelState is "Valid"
+2018-04-03 19:34:56.869 +02:00 [INF] Executing ChallengeResult with authentication schemes (["OpenIdConnect"]).
+2018-04-03 19:34:57.314 +02:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 19:34:57.314 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 480.91720000000004ms
+2018-04-03 19:34:57.315 +02:00 [INF] Request finished in 490.945ms 302 
+2018-04-03 19:43:32.534 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 19:43:32
+2018-04-03 19:43:32.562 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 19:43:32
+2018-04-03 19:43:34.388 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 19:43:34.537 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 19:43:34.989 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 19:43:35.304 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 19:43:37.423 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 19:43:37.740 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 2513.3546ms
+2018-04-03 19:43:37.744 +02:00 [INF] Request finished in 2758.7139ms 200 text/html; charset=utf-8
+2018-04-03 19:43:46.584 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:43:46.592 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 19:43:46.592 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 19:43:46.594 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:43:46.699 +02:00 [INF] Request finished in 115.3893ms 500 text/html; charset=utf-8
+2018-04-03 19:43:54.258 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/  
+2018-04-03 19:43:54.261 +02:00 [INF] Request finished in 3.5032ms 404 
+2018-04-03 19:45:03.477 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 19:45:03
+2018-04-03 19:45:03.509 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 19:45:03
+2018-04-03 19:45:05.285 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 19:45:05.442 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 19:45:05.757 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 19:45:06.076 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 19:45:08.181 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 19:45:08.493 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 2496.1258000000003ms
+2018-04-03 19:45:08.497 +02:00 [INF] Request finished in 2745.5168ms 200 text/html; charset=utf-8
+2018-04-03 19:45:15.219 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:45:15.227 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 19:45:15.228 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 19:45:15.230 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:45:15.328 +02:00 [INF] Request finished in 109.1986ms 500 text/html; charset=utf-8
+2018-04-03 19:46:27.830 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 19:46:27
+2018-04-03 19:46:27.857 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 19:46:27
+2018-04-03 19:46:29.583 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 19:46:29.774 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 19:46:30.301 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 19:46:30.418 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 19:46:30.419 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 19:46:30.421 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:46:30.563 +02:00 [INF] Request finished in 265.9348ms 500 text/html; charset=utf-8
+2018-04-03 19:46:50.809 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:46:51.074 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 19:46:53.595 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 19:46:54.008 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 3023.5639ms
+2018-04-03 19:46:54.010 +02:00 [INF] Request finished in 3201.2858ms 200 text/html; charset=utf-8
+2018-04-03 19:47:35.713 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:47:35.767 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 19:47:35.973 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 19:47:35.999 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 284.7889ms
+2018-04-03 19:47:35.999 +02:00 [INF] Request finished in 286.4694ms 200 text/html; charset=utf-8
+2018-04-03 19:47:36.104 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 19:47:36.107 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 19:47:36.114 +02:00 [INF] Request finished in 8.5879ms 200 image/x-icon
+2018-04-03 19:48:03.283 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/account/login application/x-www-form-urlencoded 257
+2018-04-03 19:48:03.348 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LoginInputModel","login"]) - ModelState is "Valid"
+2018-04-03 19:48:03.382 +02:00 [INF] AuthenticationScheme: Cookies signed in.
+2018-04-03 19:48:03.383 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2018-04-03 19:48:03.383 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 83.3159ms
+2018-04-03 19:48:03.385 +02:00 [INF] Request finished in 102.0329ms 302 
+2018-04-03 19:48:03.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 19:48:03.401 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 19:48:03.401 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 19:48:03.402 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:48:03.434 +02:00 [INF] Request finished in 34.0923ms 500 text/html; charset=utf-8
+2018-04-03 19:48:15.095 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 19:48:15.099 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:15.100 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:15.100 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:15.120 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 19:48:15.121 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 19:48:15.123 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 22.8169ms
+2018-04-03 19:48:15.123 +02:00 [INF] Request finished in 28.6816ms 200 text/html; charset=utf-8
+2018-04-03 19:48:24.413 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=OpenIdConnect  
+2018-04-03 19:48:24.414 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:24.414 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:24.414 +02:00 [INF] AuthenticationScheme: Cookies was successfully authenticated.
+2018-04-03 19:48:24.439 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["OpenIdConnect",""]) - ModelState is "Valid"
+2018-04-03 19:48:24.443 +02:00 [INF] Executing ChallengeResult with authentication schemes (["OpenIdConnect"]).
+2018-04-03 19:48:24.955 +02:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 19:48:24.956 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 536.0072ms
+2018-04-03 19:48:24.956 +02:00 [INF] Request finished in 542.6535ms 302 
+2018-04-03 19:48:39.234 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/ application/x-www-form-urlencoded 1859
+2018-04-03 19:48:39.362 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: sub claim is missing
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AssertRequiredClaims(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 119
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AugmentPrincipal(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 80
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.<SignInAsync>d__7.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 68
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 19:48:39.397 +02:00 [INF] Request finished in 163.6043ms 500 text/html; charset=utf-8
+2018-04-03 20:01:55.127 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:01:55
+2018-04-03 20:01:55.151 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:01:55
+2018-04-03 20:01:56.882 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:01:57.052 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:01:57.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:01:57.518 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 20:01:57.519 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 20:01:57.520 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:01:57.662 +02:00 [INF] Request finished in 265.7442ms 500 text/html; charset=utf-8
+2018-04-03 20:02:03.090 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:02:03.355 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:02:05.915 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:02:06.342 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 3082.2624ms
+2018-04-03 20:02:06.345 +02:00 [INF] Request finished in 3254.7692ms 200 text/html; charset=utf-8
+2018-04-03 20:02:06.358 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:02:06.386 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:02:06.387 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:02:06.391 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 32.0278ms
+2018-04-03 20:02:06.391 +02:00 [INF] Request finished in 33.7032ms 200 text/html; charset=utf-8
+2018-04-03 20:02:08.536 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=OpenIdConnect  
+2018-04-03 20:02:08.571 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["OpenIdConnect",""]) - ModelState is "Valid"
+2018-04-03 20:02:08.574 +02:00 [INF] Executing ChallengeResult with authentication schemes (["OpenIdConnect"]).
+2018-04-03 20:02:09.089 +02:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 20:02:09.089 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 547.09480000000008ms
+2018-04-03 20:02:09.091 +02:00 [INF] Request finished in 554.3345ms 302 
+2018-04-03 20:02:22.134 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/ application/x-www-form-urlencoded 1859
+2018-04-03 20:02:22.300 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: sub claim is missing
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AssertRequiredClaims(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 119
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AugmentPrincipal(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 80
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.<SignInAsync>d__7.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 68
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:02:22.334 +02:00 [INF] Request finished in 199.7452ms 500 text/html; charset=utf-8
+2018-04-03 20:28:26.088 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:28:26
+2018-04-03 20:28:26.135 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:28:26
+2018-04-03 20:28:31.411 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:28:31.726 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:28:32.500 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:28:32.692 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 20:28:32.692 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 20:28:32.696 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:28:32.978 +02:00 [INF] Request finished in 483.9852ms 500 text/html; charset=utf-8
+2018-04-03 20:28:51.197 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:28:51.986 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:28:55.323 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:28:55.402 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:28:58.575 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:28:58.575 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:28:59.867 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 4534.9826ms
+2018-04-03 20:28:59.867 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 8168.4962000000005ms
+2018-04-03 20:28:59.873 +02:00 [INF] Request finished in 4549.6343ms 200 text/html; charset=utf-8
+2018-04-03 20:28:59.873 +02:00 [INF] Request finished in 8676.6028ms 200 text/html; charset=utf-8
+2018-04-03 20:29:08.203 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=aad  
+2018-04-03 20:29:08.264 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["aad",""]) - ModelState is "Valid"
+2018-04-03 20:29:08.268 +02:00 [INF] Executing ChallengeResult with authentication schemes (["aad"]).
+2018-04-03 20:29:09.169 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 954.899ms
+2018-04-03 20:29:09.173 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: IDX10803: Unable to obtain configuration from: 'https://login.microsoftonline.com/.well-known/openid-configuration'. ---> System.IO.IOException: IDX10804: Unable to retrieve document from: 'https://login.microsoftonline.com/.well-known/openid-configuration'. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.<GetDocumentAsync>d__8.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.<GetDocumentAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.<GetAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.<GetConfigurationAsync>d__24.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.<GetConfigurationAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.<HandleChallengeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<ChallengeAsync>d__53.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<ChallengeAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.<ExecuteResultAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerMiddleware.cs:line 72
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:29:09.349 +02:00 [INF] Request finished in 1146.619ms 500 text/html; charset=utf-8
+2018-04-03 20:29:27.513 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:29:27.585 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:29:27.586 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:29:27.593 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 78.3882ms
+2018-04-03 20:29:27.594 +02:00 [INF] Request finished in 80.7969ms 200 text/html; charset=utf-8
+2018-04-03 20:29:30.272 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=OpenIdConnect  
+2018-04-03 20:29:30.350 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["OpenIdConnect",""]) - ModelState is "Valid"
+2018-04-03 20:29:30.351 +02:00 [INF] Executing ChallengeResult with authentication schemes (["OpenIdConnect"]).
+2018-04-03 20:29:31.401 +02:00 [INF] AuthenticationScheme: OpenIdConnect was challenged.
+2018-04-03 20:29:31.402 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 1128.9345ms
+2018-04-03 20:29:31.404 +02:00 [INF] Request finished in 1132.816ms 302 
+2018-04-03 20:29:48.887 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/ application/x-www-form-urlencoded 1859
+2018-04-03 20:29:49.342 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: sub claim is missing
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AssertRequiredClaims(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 119
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.AugmentPrincipal(ClaimsPrincipal principal) in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 80
+   at IdentityServer4.Hosting.IdentityServerAuthenticationService.<SignInAsync>d__7.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerAuthenticationService.cs:line 68
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:29:49.468 +02:00 [INF] Request finished in 580.781ms 500 text/html; charset=utf-8
+2018-04-03 20:31:24.075 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:31:24
+2018-04-03 20:31:24.114 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:31:24
+2018-04-03 20:31:26.539 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:31:26.901 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:31:27.394 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:31:27.574 +02:00 [WRN] .AspNetCore.Correlation. state property not found.
+2018-04-03 20:31:27.574 +02:00 [INF] Error from RemoteAuthentication: Correlation failed..
+2018-04-03 20:31:27.577 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.Exception: Correlation failed.
+   at Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler`1.<HandleRequestAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.FederatedSignOut.AuthenticationRequestHandlerWrapper.<HandleRequestAsync>d__6.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\FederatedSignOut\AuthenticationRequestHandlerWrapper.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:31:27.781 +02:00 [INF] Request finished in 393.1479ms 500 text/html; charset=utf-8
+2018-04-03 20:41:09.082 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:41:09
+2018-04-03 20:41:09.119 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:41:09
+2018-04-03 20:41:12.761 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:41:13.114 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:41:14.130 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:41:14.627 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:41:18.937 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:41:19.715 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5237.0102000000006ms
+2018-04-03 20:41:19.725 +02:00 [INF] Request finished in 5600.5612ms 200 text/html; charset=utf-8
+2018-04-03 20:41:28.109 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:41:28.283 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:41:29.234 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:41:29.661 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1444.9782ms
+2018-04-03 20:41:29.661 +02:00 [INF] Request finished in 1552.1733ms 200 text/html; charset=utf-8
+2018-04-03 20:41:29.684 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:41:29.752 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:41:29.753 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:41:29.758 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 72.8313ms
+2018-04-03 20:41:29.759 +02:00 [INF] Request finished in 74.8236ms 200 text/html; charset=utf-8
+2018-04-03 20:41:33.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=AAD  
+2018-04-03 20:41:33.396 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["AAD",""]) - ModelState is "Valid"
+2018-04-03 20:41:33.406 +02:00 [INF] Executing ChallengeResult with authentication schemes (["AAD"]).
+2018-04-03 20:41:34.582 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 1303.6123ms
+2018-04-03 20:41:34.587 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.InvalidOperationException: IDX10803: Unable to obtain configuration from: 'https://login.microsoftonline.com/.well-known/openid-configuration'. ---> System.IO.IOException: IDX10804: Unable to retrieve document from: 'https://login.microsoftonline.com/.well-known/openid-configuration'. ---> System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.<GetDocumentAsync>d__8.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.<GetDocumentAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.<GetAsync>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.<GetConfigurationAsync>d__24.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.<GetConfigurationAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.<HandleChallengeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.<ChallengeAsync>d__53.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.<ChallengeAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.<ExecuteResultAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\IdentityServerMiddleware.cs:line 72
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.<Invoke>d__3.MoveNext() in C:\ballen\github\identity\IdSvr4\IdentityServer4\src\IdentityServer4\Hosting\BaseUrlMiddleware.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-04-03 20:41:34.905 +02:00 [INF] Request finished in 1651.4625ms 500 text/html; charset=utf-8
+2018-04-03 20:42:11.407 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:42:11
+2018-04-03 20:42:11.442 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:42:11
+2018-04-03 20:42:15.347 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:42:15.830 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:42:16.573 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:42:17.276 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:42:21.762 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:42:22.600 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5441.7691ms
+2018-04-03 20:42:22.609 +02:00 [INF] Request finished in 6040.8279ms 200 text/html; charset=utf-8
+2018-04-03 20:42:27.966 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:42:28.130 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:42:29.143 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:42:29.440 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1365.7036ms
+2018-04-03 20:42:29.441 +02:00 [INF] Request finished in 1475.0445ms 200 text/html; charset=utf-8
+2018-04-03 20:42:29.460 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:42:29.498 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:42:29.499 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:42:29.502 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 41.380300000000005ms
+2018-04-03 20:42:29.502 +02:00 [INF] Request finished in 42.7695ms 200 text/html; charset=utf-8
+2018-04-03 20:42:38.284 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/account/login application/x-www-form-urlencoded 257
+2018-04-03 20:42:38.429 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LoginInputModel","login"]) - ModelState is "Valid"
+2018-04-03 20:42:38.504 +02:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-04-03 20:42:38.507 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2018-04-03 20:42:38.507 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 189.7191ms
+2018-04-03 20:42:38.511 +02:00 [INF] Request finished in 227.301ms 302 
+2018-04-03 20:42:38.520 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:42:38.532 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:38.533 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:38.533 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:38.560 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:42:38.561 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:42:38.564 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 30.8553ms
+2018-04-03 20:42:38.565 +02:00 [INF] Request finished in 44.2458ms 200 text/html; charset=utf-8
+2018-04-03 20:42:44.093 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/grants  
+2018-04-03 20:42:44.094 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:44.094 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:44.095 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:44.123 +02:00 [INF] Authorization was successful for user: bob.
+2018-04-03 20:42:44.162 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.GrantsController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:42:44.563 +02:00 [INF] Executing ViewResult, running view at path /Views/Grants/Index.cshtml.
+2018-04-03 20:42:44.580 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.GrantsController.Index (IdentityServer) in 473.6109ms
+2018-04-03 20:42:44.581 +02:00 [INF] Request finished in 487.5311ms 200 text/html; charset=utf-8
+2018-04-03 20:42:51.826 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/Logout  
+2018-04-03 20:42:51.827 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:51.827 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:51.827 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:51.864 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:42:52.136 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Logout.cshtml.
+2018-04-03 20:42:52.146 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 309.76820000000004ms
+2018-04-03 20:42:52.147 +02:00 [INF] Request finished in 320.787ms 200 text/html; charset=utf-8
+2018-04-03 20:42:54.151 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/Account/Logout application/x-www-form-urlencoded 235
+2018-04-03 20:42:54.152 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:54.152 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:54.152 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:42:54.211 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LogoutInputModel"]) - ModelState is "Valid"
+2018-04-03 20:42:54.232 +02:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-04-03 20:42:54.483 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/LoggedOut.cshtml.
+2018-04-03 20:42:54.504 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 339.6855ms
+2018-04-03 20:42:54.505 +02:00 [INF] Request finished in 353.9259ms 200 text/html; charset=utf-8
+2018-04-03 20:43:02.093 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/  
+2018-04-03 20:43:02.095 +02:00 [INF] Request finished in 2.2414ms 404 
+2018-04-03 20:43:06.675 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:43:06.736 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:43:06.737 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:43:06.739 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 63.084ms
+2018-04-03 20:43:06.740 +02:00 [INF] Request finished in 64.3674ms 200 text/html; charset=utf-8
+2018-04-03 20:43:08.858 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/ExternalLogin?provider=AAD  
+2018-04-03 20:43:08.937 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["AAD",""]) - ModelState is "Valid"
+2018-04-03 20:43:08.943 +02:00 [INF] Executing ChallengeResult with authentication schemes (["AAD"]).
+2018-04-03 20:43:13.050 +02:00 [INF] AuthenticationScheme: AAD was challenged.
+2018-04-03 20:43:13.050 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 4176.1818ms
+2018-04-03 20:43:13.051 +02:00 [INF] Request finished in 4192.5488ms 302 
+2018-04-03 20:45:14.177 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:45:14
+2018-04-03 20:45:14.216 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:45:14
+2018-04-03 20:45:17.596 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:45:17.854 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:45:18.548 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:45:18.994 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:45:23.504 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:45:24.220 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5336.8069000000005ms
+2018-04-03 20:45:24.228 +02:00 [INF] Request finished in 5685.9212ms 200 text/html; charset=utf-8
+2018-04-03 20:45:32.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:45:32.204 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:45:33.184 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:45:33.526 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1377.1292ms
+2018-04-03 20:45:33.528 +02:00 [INF] Request finished in 1469.4381ms 200 text/html; charset=utf-8
+2018-04-03 20:45:33.545 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:45:33.580 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:45:33.581 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:45:33.584 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 38.7265ms
+2018-04-03 20:45:33.585 +02:00 [INF] Request finished in 39.7203ms 200 text/html; charset=utf-8
+2018-04-03 20:45:35.456 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=AAD  
+2018-04-03 20:45:35.588 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["AAD",""]) - ModelState is "Valid"
+2018-04-03 20:45:35.596 +02:00 [INF] Executing ChallengeResult with authentication schemes (["AAD"]).
+2018-04-03 20:45:36.513 +02:00 [INF] AuthenticationScheme: AAD was challenged.
+2018-04-03 20:45:36.514 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 1029.2858ms
+2018-04-03 20:45:36.517 +02:00 [INF] Request finished in 1061.2288ms 302 
+2018-04-03 20:45:53.793 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/signin-oidc application/x-www-form-urlencoded 1859
+2018-04-03 20:45:54.268 +02:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2018-04-03 20:45:54.271 +02:00 [INF] Request finished in 478.1745ms 302 
+2018-04-03 20:45:54.289 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLoginCallback  
+2018-04-03 20:45:54.330 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLoginCallback (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:45:54.335 +02:00 [INF] AuthenticationScheme: idsrv.external was successfully authenticated.
+2018-04-03 20:45:54.374 +02:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-04-03 20:45:54.382 +02:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2018-04-03 20:45:54.384 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2018-04-03 20:45:54.384 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLoginCallback (IdentityServer) in 85.9567ms
+2018-04-03 20:45:54.385 +02:00 [INF] Request finished in 95.4845ms 302 
+2018-04-03 20:45:54.396 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:45:54.396 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:45:54.396 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:45:54.397 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:45:54.425 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:45:54.425 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:45:54.428 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 31.294500000000003ms
+2018-04-03 20:45:54.429 +02:00 [INF] Request finished in 33.0649ms 200 text/html; charset=utf-8
+2018-04-03 20:46:03.244 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/grants  
+2018-04-03 20:46:03.245 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:03.246 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:03.246 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:03.286 +02:00 [INF] Authorization was successful for user: Istvan Marki.
+2018-04-03 20:46:03.363 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.GrantsController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:46:03.835 +02:00 [INF] Executing ViewResult, running view at path /Views/Grants/Index.cshtml.
+2018-04-03 20:46:03.853 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.GrantsController.Index (IdentityServer) in 588.9923ms
+2018-04-03 20:46:03.853 +02:00 [INF] Request finished in 609.1338ms 200 text/html; charset=utf-8
+2018-04-03 20:46:09.207 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/Logout  
+2018-04-03 20:46:09.209 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:09.209 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:09.210 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:09.297 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:46:09.659 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Logout.cshtml.
+2018-04-03 20:46:09.669 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 441.2918ms
+2018-04-03 20:46:09.669 +02:00 [INF] Request finished in 461.8657ms 200 text/html; charset=utf-8
+2018-04-03 20:46:11.578 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/Account/Logout application/x-www-form-urlencoded 235
+2018-04-03 20:46:11.580 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:11.581 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:11.581 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:11.719 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LogoutInputModel"]) - ModelState is "Valid"
+2018-04-03 20:46:11.762 +02:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-04-03 20:46:11.774 +02:00 [INF] Executing SignOutResult with authentication schemes (["AAD"]).
+2018-04-03 20:46:11.779 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:46:11.780 +02:00 [INF] AuthenticationScheme: AAD signed out.
+2018-04-03 20:46:11.781 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 173.0439ms
+2018-04-03 20:46:11.781 +02:00 [INF] Request finished in 203.3104ms 302 
+2018-04-03 20:46:13.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/signout-callback-oidc?state=CfDJ8HKHPjRjQPJJr243GDOnfCsiiP_453GzwfXy0OXDa6k-lPSwDcSiFhr0kzZriwhTotA5FXtr-G7Li-8z5jOMdb1q7s3Vc-Znh2hccGNV3jpHRk5e19fP42JG_Vynx26x9NUfsmx6Z-rQ2cytapxJ-tWcPGdmpYpgkSXvPl69ASuV  
+2018-04-03 20:46:13.427 +02:00 [INF] Request finished in 3.3348ms 302 
+2018-04-03 20:46:13.463 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/Logout  
+2018-04-03 20:46:13.541 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:46:13.898 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/LoggedOut.cshtml.
+2018-04-03 20:46:13.908 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 443.7705ms
+2018-04-03 20:46:13.909 +02:00 [INF] Request finished in 445.513ms 200 text/html; charset=utf-8
+2018-04-03 20:53:15.568 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 20:53:15
+2018-04-03 20:53:15.601 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 20:53:15
+2018-04-03 20:53:19.769 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 20:53:20.146 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 20:53:21.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:53:21.570 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:53:26.438 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:53:27.183 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5728.6032000000005ms
+2018-04-03 20:53:27.191 +02:00 [INF] Request finished in 6078.6795ms 200 text/html; charset=utf-8
+2018-04-03 20:56:43.855 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:56:44.181 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:56:45.157 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:56:45.519 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1403.6234000000002ms
+2018-04-03 20:56:45.520 +02:00 [INF] Request finished in 1664.3774ms 200 text/html; charset=utf-8
+2018-04-03 20:56:45.543 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 20:56:45.588 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:56:45.589 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:56:45.594 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 49.958000000000006ms
+2018-04-03 20:56:45.594 +02:00 [INF] Request finished in 51.246ms 200 text/html; charset=utf-8
+2018-04-03 20:56:54.350 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/account/login application/x-www-form-urlencoded 257
+2018-04-03 20:56:54.473 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LoginInputModel","login"]) - ModelState is "Valid"
+2018-04-03 20:56:54.547 +02:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-04-03 20:56:54.550 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2018-04-03 20:56:54.551 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 170.18800000000002ms
+2018-04-03 20:56:54.554 +02:00 [INF] Request finished in 203.8873ms 302 
+2018-04-03 20:56:54.564 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 20:56:54.566 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:56:54.567 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:56:54.567 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:56:54.606 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 20:56:54.606 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 20:56:54.609 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 41.3707ms
+2018-04-03 20:56:54.609 +02:00 [INF] Request finished in 44.8056ms 200 text/html; charset=utf-8
+2018-04-03 20:57:06.450 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/Logout  
+2018-04-03 20:57:06.453 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:06.454 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:06.455 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:06.578 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:57:06.909 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Logout.cshtml.
+2018-04-03 20:57:06.918 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 420.0233ms
+2018-04-03 20:57:06.918 +02:00 [INF] Request finished in 468.6866ms 200 text/html; charset=utf-8
+2018-04-03 20:57:08.918 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/Account/Logout application/x-www-form-urlencoded 235
+2018-04-03 20:57:08.920 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:08.920 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:08.921 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 20:57:09.019 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) with arguments (["IdentityServer4.Quickstart.UI.LogoutInputModel"]) - ModelState is "Valid"
+2018-04-03 20:57:09.056 +02:00 [INF] AuthenticationScheme: idsrv signed out.
+2018-04-03 20:57:09.386 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/LoggedOut.cshtml.
+2018-04-03 20:57:09.408 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Logout (IdentityServer) in 468.00570000000005ms
+2018-04-03 20:57:09.409 +02:00 [INF] Request finished in 490.7043ms 200 text/html; charset=utf-8
+2018-04-03 20:57:16.784 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:57:16.822 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:57:16.822 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:57:16.824 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 39.819900000000004ms
+2018-04-03 20:57:16.824 +02:00 [INF] Request finished in 40.82ms 200 text/html; charset=utf-8
+2018-04-03 20:58:32.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:58:32.577 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:58:32.844 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:58:32.871 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 368.11060000000003ms
+2018-04-03 20:58:32.871 +02:00 [INF] Request finished in 369.7228ms 200 text/html; charset=utf-8
+2018-04-03 20:58:33.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 20:58:33.008 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 20:58:33.022 +02:00 [INF] Request finished in 16.9915ms 200 image/x-icon
+2018-04-03 20:59:20.712 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:59:20.819 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:59:21.054 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:59:21.085 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 371.1399ms
+2018-04-03 20:59:21.085 +02:00 [INF] Request finished in 372.9751ms 200 text/html; charset=utf-8
+2018-04-03 20:59:21.225 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 20:59:21.226 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 20:59:21.227 +02:00 [INF] Request finished in 2.4217ms 200 image/x-icon
+2018-04-03 20:59:40.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:59:40.356 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:59:40.610 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:59:40.638 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 314.61170000000004ms
+2018-04-03 20:59:40.638 +02:00 [INF] Request finished in 315.9458ms 200 text/html; charset=utf-8
+2018-04-03 20:59:40.767 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 20:59:40.767 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 20:59:40.768 +02:00 [INF] Request finished in 1.7732ms 200 image/x-icon
+2018-04-03 20:59:44.386 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:59:44.468 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:59:44.468 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:59:44.471 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 84.1198ms
+2018-04-03 20:59:44.472 +02:00 [INF] Request finished in 85.9664ms 200 text/html; charset=utf-8
+2018-04-03 20:59:44.689 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 20:59:44.690 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 20:59:44.691 +02:00 [INF] Request finished in 1.7009ms 200 image/x-icon
+2018-04-03 20:59:46.951 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/Account/login  
+2018-04-03 20:59:47.003 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 20:59:47.003 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 20:59:47.006 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 53.4482ms
+2018-04-03 20:59:47.006 +02:00 [INF] Request finished in 54.6724ms 200 text/html; charset=utf-8
+2018-04-03 20:59:47.048 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 20:59:47.049 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 20:59:47.059 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 20:59:47.059 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 20:59:47.059 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 20:59:47.062 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 20:59:47.062 +02:00 [INF] Request finished in 3.5054ms 200 text/css
+2018-04-03 20:59:47.072 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 20:59:47.075 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 20:59:47.081 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 20:59:47.081 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 20:59:47.085 +02:00 [INF] Request finished in 5.938ms 200 image/png
+2018-04-03 20:59:47.095 +02:00 [INF] Request finished in 36.6648ms 200 application/javascript
+2018-04-03 20:59:47.132 +02:00 [INF] Request finished in 84.6323ms 200 text/css
+2018-04-03 20:59:47.140 +02:00 [INF] Request finished in 70.5745ms 200 application/javascript
+2018-04-03 20:59:47.355 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 20:59:47.356 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 20:59:47.360 +02:00 [INF] Request finished in 5.075ms 200 image/x-icon
+2018-04-03 21:01:49.295 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 21:01:49
+2018-04-03 21:01:49.339 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 21:01:49
+2018-04-03 21:01:53.731 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 21:01:54.069 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 21:01:54.820 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:01:55.270 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:01:59.488 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:02:00.213 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5052.5436ms
+2018-04-03 21:02:00.223 +02:00 [INF] Request finished in 5408.1825ms 200 text/html; charset=utf-8
+2018-04-03 21:02:06.631 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:02:06.880 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:02:07.974 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:02:08.396 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1644.6387ms
+2018-04-03 21:02:08.397 +02:00 [INF] Request finished in 1766.2005ms 200 text/html; charset=utf-8
+2018-04-03 21:02:08.411 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:02:08.452 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:02:08.452 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:02:08.456 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 44.1662ms
+2018-04-03 21:02:08.456 +02:00 [INF] Request finished in 45.3244ms 200 text/html; charset=utf-8
+2018-04-03 21:02:27.569 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 21:02:27
+2018-04-03 21:02:27.611 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 21:02:27
+2018-04-03 21:02:28.255 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 21:02:28.341 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 21:02:28.581 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:02:28.869 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:02:31.643 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:02:32.378 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 3517.4842000000003ms
+2018-04-03 21:02:32.384 +02:00 [INF] Request finished in 3812.3459ms 200 text/html; charset=utf-8
+2018-04-03 21:02:32.412 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:02:32.415 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:02:32.415 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:02:32.416 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:02:32.416 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:02:32.416 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:02:32.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:02:32.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:02:32.419 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:02:32.420 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:02:32.420 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:02:32.420 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:02:32.431 +02:00 [INF] Request finished in 12.3056ms 200 application/javascript
+2018-04-03 21:02:32.431 +02:00 [INF] Request finished in 11.7304ms 200 image/jpeg
+2018-04-03 21:02:32.431 +02:00 [INF] Request finished in 15.8623ms 200 text/css
+2018-04-03 21:02:32.431 +02:00 [INF] Request finished in 15.8361ms 200 image/png
+2018-04-03 21:02:32.432 +02:00 [INF] Request finished in 20.3633ms 200 text/css
+2018-04-03 21:02:32.434 +02:00 [INF] Request finished in 13.6561ms 200 application/javascript
+2018-04-03 21:02:33.154 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:02:33.154 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:02:33.155 +02:00 [INF] Request finished in 0.8243ms 200 image/x-icon
+2018-04-03 21:02:41.308 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:02:41.388 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:02:42.190 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:02:42.385 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1023.8011ms
+2018-04-03 21:02:42.386 +02:00 [INF] Request finished in 1077.6037ms 200 text/html; charset=utf-8
+2018-04-03 21:03:50.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:03:50.439 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:03:50.742 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:03:50.789 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 352.33930000000004ms
+2018-04-03 21:03:50.789 +02:00 [INF] Request finished in 355.6081ms 200 text/html; charset=utf-8
+2018-04-03 21:03:51.377 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:03:51.377 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:03:51.377 +02:00 [INF] Request finished in 0.8334ms 200 image/x-icon
+2018-04-03 21:06:35.752 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-03 21:06:35
+2018-04-03 21:06:35.826 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-03 21:06:35
+2018-04-03 21:06:36.672 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-03 21:06:36.761 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-03 21:06:37.059 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:06:37.357 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:06:41.353 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:06:41.896 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 4562.4679000000006ms
+2018-04-03 21:06:41.900 +02:00 [INF] Request finished in 4848.0191ms 200 text/html; charset=utf-8
+2018-04-03 21:06:51.286 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:06:51.367 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:06:52.242 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:06:52.561 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 1227.02ms
+2018-04-03 21:06:52.561 +02:00 [INF] Request finished in 1275.9478ms 200 text/html; charset=utf-8
+2018-04-03 21:15:57.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:15:57.144 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:15:57.146 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:15:57.152 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 10.8145ms
+2018-04-03 21:15:57.153 +02:00 [INF] Request finished in 13.486ms 200 text/html; charset=utf-8
+2018-04-03 21:15:57.241 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:15:57.249 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:15:57.249 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:15:57.249 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:15:57.250 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:15:57.251 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:15:57.252 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:15:57.253 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:15:57.260 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:15:57.261 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:15:57.262 +02:00 [INF] Request finished in 20.9965ms 200 image/png
+2018-04-03 21:15:57.262 +02:00 [INF] Request finished in 13.073ms 200 text/css
+2018-04-03 21:15:57.291 +02:00 [INF] Request finished in 38.7765ms 200 application/javascript
+2018-04-03 21:15:57.291 +02:00 [INF] Request finished in 42.3861ms 200 text/css
+2018-04-03 21:15:57.295 +02:00 [INF] Request finished in 35.3518ms 200 application/javascript
+2018-04-03 21:15:57.845 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:15:57.846 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:15:57.847 +02:00 [INF] Request finished in 1.8517ms 200 image/x-icon
+2018-04-03 21:17:40.372 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:17:40.374 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:17:40.375 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:17:40.380 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 5.8441ms
+2018-04-03 21:17:40.380 +02:00 [INF] Request finished in 8.0162ms 200 text/html; charset=utf-8
+2018-04-03 21:17:40.468 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:17:40.470 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:17:40.472 +02:00 [INF] Request finished in 4.2592ms 200 image/png
+2018-04-03 21:17:40.472 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:17:40.474 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:17:40.474 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:17:40.476 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:17:40.482 +02:00 [INF] Request finished in 10.3526ms 200 application/javascript
+2018-04-03 21:17:40.483 +02:00 [INF] Request finished in 11.1832ms 200 application/javascript
+2018-04-03 21:17:40.484 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:17:40.487 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:17:40.488 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:17:40.490 +02:00 [INF] Request finished in 5.2883ms 200 text/css
+2018-04-03 21:17:40.491 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:17:40.502 +02:00 [INF] Request finished in 13.9986ms 200 text/css
+2018-04-03 21:17:41.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:17:41.060 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:17:41.060 +02:00 [INF] Request finished in 0.7475ms 200 image/x-icon
+2018-04-03 21:18:33.530 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:18:33.531 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:18:33.532 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:18:33.538 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 6.487ms
+2018-04-03 21:18:33.538 +02:00 [INF] Request finished in 8.4411ms 200 text/html; charset=utf-8
+2018-04-03 21:18:33.647 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:18:33.648 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:18:33.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:18:33.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:18:33.649 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:18:33.651 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:18:33.652 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:18:33.653 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:18:33.654 +02:00 [INF] Request finished in 7.3881ms 200 text/css
+2018-04-03 21:18:33.656 +02:00 [INF] Request finished in 7.9012ms 200 text/css
+2018-04-03 21:18:33.656 +02:00 [INF] Request finished in 4.2877ms 200 application/javascript
+2018-04-03 21:18:33.657 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:18:33.657 +02:00 [INF] Request finished in 9.1005ms 200 application/javascript
+2018-04-03 21:18:33.658 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:18:33.659 +02:00 [INF] Request finished in 1.8039ms 200 image/png
+2018-04-03 21:18:34.246 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:18:34.246 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:18:34.247 +02:00 [INF] Request finished in 1.6054ms 200 image/x-icon
+2018-04-03 21:20:03.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:20:03.696 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:20:03.697 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:20:03.701 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 5.6672ms
+2018-04-03 21:20:03.702 +02:00 [INF] Request finished in 7.8193ms 200 text/html; charset=utf-8
+2018-04-03 21:20:03.812 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:20:03.813 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:20:03.819 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:20:03.820 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:20:03.820 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:20:03.821 +02:00 [INF] Request finished in 2.2721ms 200 image/png
+2018-04-03 21:20:03.822 +02:00 [INF] Request finished in 10.4436ms 200 text/css
+2018-04-03 21:20:03.823 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:20:03.827 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:20:03.829 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:20:03.830 +02:00 [INF] Request finished in 10.1427ms 200 application/javascript
+2018-04-03 21:20:03.841 +02:00 [INF] Request finished in 14.0304ms 200 application/javascript
+2018-04-03 21:20:03.848 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:20:03.849 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:20:03.850 +02:00 [INF] Request finished in 1.9182ms 200 text/css
+2018-04-03 21:20:04.428 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:20:04.428 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:20:04.429 +02:00 [INF] Request finished in 1.6742ms 200 image/x-icon
+2018-04-03 21:24:07.573 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:24:07.574 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:24:07.575 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:24:07.579 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 4.7962ms
+2018-04-03 21:24:07.579 +02:00 [INF] Request finished in 6.5058ms 200 text/html; charset=utf-8
+2018-04-03 21:24:07.687 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:24:07.688 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:24:07.696 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:24:07.699 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:24:07.700 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:24:07.700 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:24:07.700 +02:00 [INF] Request finished in 3.5236ms 200 text/css
+2018-04-03 21:24:07.701 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:24:07.701 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:24:07.702 +02:00 [INF] Request finished in 1.9473ms 200 image/png
+2018-04-03 21:24:07.705 +02:00 [INF] Request finished in 4.9078ms 200 application/javascript
+2018-04-03 21:24:07.705 +02:00 [INF] Request finished in 18.6822ms 200 text/css
+2018-04-03 21:24:07.710 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:24:07.711 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:24:07.721 +02:00 [INF] Request finished in 11.7355ms 200 application/javascript
+2018-04-03 21:24:08.278 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:24:08.278 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:24:08.279 +02:00 [INF] Request finished in 1.0695ms 200 image/x-icon
+2018-04-03 21:24:17.161 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:24:17.163 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:24:17.164 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:24:17.168 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 5.628ms
+2018-04-03 21:24:17.169 +02:00 [INF] Request finished in 7.8449ms 200 text/html; charset=utf-8
+2018-04-03 21:24:17.235 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:24:17.238 +02:00 [INF] The file /icon.png was not modified
+2018-04-03 21:24:17.242 +02:00 [INF] Request finished in 7.0041ms 304 image/png
+2018-04-03 21:27:02.165 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:27:02.166 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:27:02.166 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:27:02.169 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 3.2813000000000003ms
+2018-04-03 21:27:02.169 +02:00 [INF] Request finished in 4.9015ms 200 text/html; charset=utf-8
+2018-04-03 21:27:02.283 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:27:02.285 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:27:02.287 +02:00 [INF] Request finished in 3.7626ms 200 image/png
+2018-04-03 21:27:02.288 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:27:02.291 +02:00 [INF] The file /lib/bootstrap/css/bootstrap.css was not modified
+2018-04-03 21:27:02.292 +02:00 [INF] Request finished in 4.2359ms 304 text/css
+2018-04-03 21:27:02.580 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:27:02.580 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:27:02.581 +02:00 [INF] Request finished in 1.2583ms 200 image/x-icon
+2018-04-03 21:29:31.405 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:29:31.406 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:29:31.407 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:29:31.632 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 225.8452ms
+2018-04-03 21:29:31.632 +02:00 [INF] Request finished in 227.2441ms 200 text/html; charset=utf-8
+2018-04-03 21:29:31.680 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:29:31.681 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:29:31.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:29:31.685 +02:00 [INF] Request finished in 5.1461ms 200 text/css
+2018-04-03 21:29:31.685 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:29:31.685 +02:00 [INF] Request finished in 0.9267ms 200 text/css
+2018-04-03 21:29:31.686 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:29:31.687 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:29:31.687 +02:00 [INF] Request finished in 0.9699ms 200 image/png
+2018-04-03 21:29:31.689 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:29:31.689 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:29:31.690 +02:00 [INF] Request finished in 1.9296ms 200 application/javascript
+2018-04-03 21:29:31.695 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:29:31.695 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:29:31.695 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:29:31.696 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:29:31.696 +02:00 [INF] Request finished in 0.9864ms 200 image/jpeg
+2018-04-03 21:29:31.700 +02:00 [INF] Request finished in 4.6153ms 200 application/javascript
+2018-04-03 21:29:31.910 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:29:31.911 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:29:31.912 +02:00 [INF] Request finished in 1.5587ms 200 image/x-icon
+2018-04-03 21:30:26.988 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:30:26.991 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:30:26.992 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:30:26.996 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 5.8083ms
+2018-04-03 21:30:26.996 +02:00 [INF] Request finished in 8.2636ms 200 text/html; charset=utf-8
+2018-04-03 21:30:27.066 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:30:27.066 +02:00 [INF] The file /icon.png was not modified
+2018-04-03 21:30:27.066 +02:00 [INF] Request finished in 0.6018ms 304 image/png
+2018-04-03 21:32:23.941 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:32:23.944 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:32:23.945 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:32:23.949 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 6.2554000000000007ms
+2018-04-03 21:32:23.950 +02:00 [INF] Request finished in 8.6522ms 200 text/html; charset=utf-8
+2018-04-03 21:32:24.033 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:32:24.034 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:32:24.044 +02:00 [INF] Request finished in 11.5859ms 200 text/css
+2018-04-03 21:32:24.051 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:32:24.052 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:32:24.053 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:32:24.054 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:32:24.054 +02:00 [INF] Request finished in 3.2637ms 200 text/css
+2018-04-03 21:32:24.057 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:32:24.058 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:32:24.066 +02:00 [INF] Request finished in 9.3565ms 200 application/javascript
+2018-04-03 21:32:24.073 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:32:24.075 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:32:24.078 +02:00 [INF] Request finished in 26.8316ms 200 image/png
+2018-04-03 21:32:24.080 +02:00 [INF] Request finished in 6.7783ms 200 application/javascript
+2018-04-03 21:32:24.827 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:32:24.827 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:32:24.829 +02:00 [INF] Request finished in 1.8756ms 200 image/x-icon
+2018-04-03 21:33:29.091 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:33:29.093 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:33:29.094 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:33:29.096 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 3.3325ms
+2018-04-03 21:33:29.097 +02:00 [INF] Request finished in 5.8675ms 200 text/html; charset=utf-8
+2018-04-03 21:33:29.185 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:33:29.188 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:33:29.189 +02:00 [INF] Request finished in 5.1376ms 200 image/png
+2018-04-03 21:33:29.191 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:33:29.194 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:33:29.200 +02:00 [INF] Request finished in 8.2414ms 200 image/jpeg
+2018-04-03 21:33:31.052 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:33:31.053 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:33:31.053 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:33:31.054 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 1.3249ms
+2018-04-03 21:33:31.054 +02:00 [INF] Request finished in 2.1452ms 200 text/html; charset=utf-8
+2018-04-03 21:33:31.084 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:33:31.085 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:33:31.085 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:33:31.086 +02:00 [INF] Request finished in 2.0172ms 200 image/png
+2018-04-03 21:33:31.088 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:33:31.088 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:33:31.088 +02:00 [INF] Request finished in 3.2631ms 200 text/css
+2018-04-03 21:33:31.089 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:33:31.091 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:33:31.092 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:33:31.092 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:33:31.092 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:33:31.092 +02:00 [INF] Request finished in 1.2697ms 200 image/jpeg
+2018-04-03 21:33:31.093 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:33:31.093 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:33:31.095 +02:00 [INF] Request finished in 3.547ms 200 application/javascript
+2018-04-03 21:33:31.098 +02:00 [INF] Request finished in 9.7205ms 200 text/css
+2018-04-03 21:33:31.101 +02:00 [INF] Request finished in 7.9496ms 200 application/javascript
+2018-04-03 21:33:31.322 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:33:31.323 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:33:31.323 +02:00 [INF] Request finished in 1.3311ms 200 image/x-icon
+2018-04-03 21:34:27.509 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:34:27.511 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:34:27.512 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:34:27.809 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 298.64820000000003ms
+2018-04-03 21:34:27.809 +02:00 [INF] Request finished in 300.6774ms 200 text/html; charset=utf-8
+2018-04-03 21:34:27.863 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:34:27.863 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:34:27.864 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:34:27.864 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:34:27.864 +02:00 [INF] Request finished in 1.2287ms 200 text/css
+2018-04-03 21:34:27.866 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:34:27.866 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:34:27.867 +02:00 [INF] Request finished in 3.6607ms 200 text/css
+2018-04-03 21:34:27.867 +02:00 [INF] Request finished in 1.2481ms 200 image/png
+2018-04-03 21:34:27.872 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:34:27.872 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:34:27.872 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:34:27.872 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:34:27.873 +02:00 [INF] Request finished in 0.764ms 200 image/jpeg
+2018-04-03 21:34:27.874 +02:00 [INF] Request finished in 2.5463ms 200 application/javascript
+2018-04-03 21:34:27.876 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:34:27.877 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:34:27.879 +02:00 [INF] Request finished in 3.0975ms 200 application/javascript
+2018-04-03 21:34:28.378 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:34:28.378 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:34:28.379 +02:00 [INF] Request finished in 0.793ms 200 image/x-icon
+2018-04-03 21:34:33.265 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:34:33.266 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:34:33.267 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:34:33.269 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 2.9644ms
+2018-04-03 21:34:33.270 +02:00 [INF] Request finished in 4.8986ms 200 text/html; charset=utf-8
+2018-04-03 21:35:17.669 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:35:17.670 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:35:17.671 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:35:17.922 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 251.73590000000002ms
+2018-04-03 21:35:17.922 +02:00 [INF] Request finished in 253.1997ms 200 text/html; charset=utf-8
+2018-04-03 21:35:18.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:35:18.005 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:35:18.007 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:35:18.007 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:35:18.008 +02:00 [INF] Request finished in 0.9392ms 200 text/css
+2018-04-03 21:35:18.008 +02:00 [INF] Request finished in 3.1664ms 200 text/css
+2018-04-03 21:35:18.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:35:18.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:35:18.012 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:35:18.012 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:35:18.012 +02:00 [INF] Request finished in 0.9011ms 200 image/png
+2018-04-03 21:35:18.012 +02:00 [INF] Request finished in 0.8868ms 200 image/jpeg
+2018-04-03 21:35:18.019 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:35:18.019 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:35:18.024 +02:00 [INF] Request finished in 4.9561ms 200 application/javascript
+2018-04-03 21:35:18.024 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:35:18.024 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:35:18.027 +02:00 [INF] Request finished in 3.5362ms 200 application/javascript
+2018-04-03 21:35:18.541 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:35:18.542 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:35:18.542 +02:00 [INF] Request finished in 0.9176ms 200 image/x-icon
+2018-04-03 21:35:37.563 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:35:37.564 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:35:37.565 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:35:37.814 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 249.9729ms
+2018-04-03 21:35:37.814 +02:00 [INF] Request finished in 251.8019ms 200 text/html; charset=utf-8
+2018-04-03 21:35:37.871 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:35:37.871 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:35:37.871 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:35:37.871 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:35:37.872 +02:00 [INF] Request finished in 1.0695ms 200 text/css
+2018-04-03 21:35:37.872 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:35:37.872 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:35:37.872 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:35:37.872 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:35:37.873 +02:00 [INF] Request finished in 0.7452ms 200 image/jpeg
+2018-04-03 21:35:37.873 +02:00 [INF] Request finished in 2.4473ms 200 text/css
+2018-04-03 21:35:37.875 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:35:37.875 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:35:37.877 +02:00 [INF] Request finished in 4.4407ms 200 application/javascript
+2018-04-03 21:35:37.878 +02:00 [INF] Request finished in 3.2017ms 200 application/javascript
+2018-04-03 21:35:38.366 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:35:38.367 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:35:38.367 +02:00 [INF] Request finished in 0.7691ms 200 image/x-icon
+2018-04-03 21:35:51.581 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/.well-known/openid-configuration  
+2018-04-03 21:35:51.596 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-04-03 21:35:51.862 +02:00 [INF] Request finished in 280.6554ms 200 application/json; charset=UTF-8
+2018-04-03 21:36:09.774 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/grants  
+2018-04-03 21:36:09.806 +02:00 [INF] Authorization failed for user: null.
+2018-04-03 21:36:09.811 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2018-04-03 21:36:09.813 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2018-04-03 21:36:09.819 +02:00 [INF] AuthenticationScheme: idsrv was challenged.
+2018-04-03 21:36:09.819 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.GrantsController.Index (IdentityServer) in 24.8615ms
+2018-04-03 21:36:09.819 +02:00 [INF] Request finished in 44.8784ms 302 
+2018-04-03 21:36:09.830 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login?returnUrl=%2Fgrants  
+2018-04-03 21:36:09.842 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["/grants"]) - ModelState is "Valid"
+2018-04-03 21:36:09.843 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:36:09.847 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 16.5262ms
+2018-04-03 21:36:09.848 +02:00 [INF] Request finished in 17.5263ms 200 text/html; charset=utf-8
+2018-04-03 21:36:46.303 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:36:46.304 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:36:46.484 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:36:46.499 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 194.9967ms
+2018-04-03 21:36:46.499 +02:00 [INF] Request finished in 196.4639ms 200 text/html; charset=utf-8
+2018-04-03 21:36:46.538 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:36:46.539 +02:00 [INF] The file /icon.jpg was not modified
+2018-04-03 21:36:46.539 +02:00 [INF] Request finished in 1.3704ms 304 image/jpeg
+2018-04-03 21:36:47.056 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:36:47.056 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:36:47.057 +02:00 [INF] Request finished in 0.7924ms 200 image/x-icon
+2018-04-03 21:38:01.277 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:38:01.278 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:38:01.279 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:38:01.603 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 324.8824ms
+2018-04-03 21:38:01.603 +02:00 [INF] Request finished in 326.3752ms 200 text/html; charset=utf-8
+2018-04-03 21:38:01.647 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:38:01.648 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:38:01.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:38:01.648 +02:00 [INF] Request finished in 1.1116ms 200 image/png
+2018-04-03 21:38:01.648 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:38:01.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:38:01.648 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:38:01.649 +02:00 [INF] Request finished in 0.6644ms 200 text/css
+2018-04-03 21:38:01.649 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:38:01.649 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:38:01.650 +02:00 [INF] Request finished in 1.6679ms 200 application/javascript
+2018-04-03 21:38:01.651 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:38:01.651 +02:00 [INF] Request finished in 2.6202ms 200 text/css
+2018-04-03 21:38:01.651 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:38:01.656 +02:00 [INF] Request finished in 5.4146ms 200 application/javascript
+2018-04-03 21:38:01.658 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:38:01.659 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:38:01.659 +02:00 [INF] Request finished in 1.0723ms 200 image/jpeg
+2018-04-03 21:38:02.148 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:38:02.148 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:38:02.148 +02:00 [INF] Request finished in 0.8891ms 200 image/x-icon
+2018-04-03 21:38:25.375 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:38:25.376 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:38:25.377 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:38:25.380 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 4.0641ms
+2018-04-03 21:38:25.381 +02:00 [INF] Request finished in 5.6985ms 200 text/html; charset=utf-8
+2018-04-03 21:38:25.469 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:38:25.470 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:38:25.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:38:25.470 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:38:25.471 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:38:25.471 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:38:25.471 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:38:25.472 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:38:25.474 +02:00 [INF] Request finished in 3.3826ms 200 image/jpeg
+2018-04-03 21:38:25.474 +02:00 [INF] Request finished in 3.7273ms 200 image/png
+2018-04-03 21:38:25.475 +02:00 [INF] Request finished in 4.4236ms 200 application/javascript
+2018-04-03 21:38:25.480 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:38:25.481 +02:00 [INF] Request finished in 10.4345ms 200 text/css
+2018-04-03 21:38:25.482 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:38:25.483 +02:00 [INF] Request finished in 2.9582ms 200 text/css
+2018-04-03 21:38:25.494 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:38:25.495 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:38:25.505 +02:00 [INF] Request finished in 11.0773ms 200 application/javascript
+2018-04-03 21:38:26.032 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:38:26.033 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:38:26.033 +02:00 [INF] Request finished in 0.6832ms 200 image/x-icon
+2018-04-03 21:38:47.981 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:38:47.983 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:38:47.983 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:38:48.239 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 256.92470000000003ms
+2018-04-03 21:38:48.240 +02:00 [INF] Request finished in 258.9113ms 200 text/html; charset=utf-8
+2018-04-03 21:38:48.293 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-03 21:38:48.294 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-03 21:38:48.296 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/css/site.css  
+2018-04-03 21:38:48.297 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-03 21:38:48.297 +02:00 [INF] Request finished in 1.0695ms 200 text/css
+2018-04-03 21:38:48.299 +02:00 [INF] Request finished in 5.6445ms 200 text/css
+2018-04-03 21:38:48.301 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:38:48.301 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-03 21:38:48.302 +02:00 [INF] Request finished in 1.1172ms 200 image/png
+2018-04-03 21:38:48.303 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/js/bootstrap.js  
+2018-04-03 21:38:48.304 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-03 21:38:48.304 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/jquery/jquery.js  
+2018-04-03 21:38:48.304 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-03 21:38:48.305 +02:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.jpg'
+2018-04-03 21:38:48.305 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-03 21:38:48.305 +02:00 [INF] Request finished in 0.6991ms 200 image/jpeg
+2018-04-03 21:38:48.305 +02:00 [INF] Request finished in 1.7277ms 200 application/javascript
+2018-04-03 21:38:48.309 +02:00 [INF] Request finished in 4.9191ms 200 application/javascript
+2018-04-03 21:38:48.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/favicon.ico  
+2018-04-03 21:38:48.825 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-03 21:38:48.826 +02:00 [INF] Request finished in 0.8277ms 200 image/x-icon
+2018-04-03 21:38:58.510 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/login  
+2018-04-03 21:38:58.511 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments ([""]) - ModelState is "Valid"
+2018-04-03 21:38:58.512 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-03 21:38:58.515 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 4.0095ms
+2018-04-03 21:38:58.515 +02:00 [INF] Request finished in 5.1239ms 200 text/html; charset=utf-8
+2018-04-03 21:38:58.556 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:38:58.557 +02:00 [INF] The file /icon.png was not modified
+2018-04-03 21:38:58.557 +02:00 [INF] Request finished in 0.9557ms 304 image/png
+2018-04-03 21:39:09.009 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLogin?provider=AAD  
+2018-04-03 21:39:09.030 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["AAD",""]) - ModelState is "Valid"
+2018-04-03 21:39:09.035 +02:00 [INF] Executing ChallengeResult with authentication schemes (["AAD"]).
+2018-04-03 21:39:11.188 +02:00 [INF] AuthenticationScheme: AAD was challenged.
+2018-04-03 21:39:11.189 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 2159.7649ms
+2018-04-03 21:39:11.190 +02:00 [INF] Request finished in 2180.3546ms 302 
+2018-04-03 21:39:12.297 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:44300/signin-oidc application/x-www-form-urlencoded 1859
+2018-04-03 21:39:12.480 +02:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2018-04-03 21:39:12.482 +02:00 [INF] Request finished in 184.6537ms 302 
+2018-04-03 21:39:12.494 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/account/ExternalLoginCallback  
+2018-04-03 21:39:12.501 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLoginCallback (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:39:12.505 +02:00 [INF] AuthenticationScheme: idsrv.external was successfully authenticated.
+2018-04-03 21:39:12.545 +02:00 [INF] AuthenticationScheme: idsrv signed in.
+2018-04-03 21:39:12.551 +02:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2018-04-03 21:39:12.553 +02:00 [INF] Executing RedirectResult, redirecting to /.
+2018-04-03 21:39:12.553 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLoginCallback (IdentityServer) in 52.1591ms
+2018-04-03 21:39:12.553 +02:00 [INF] Request finished in 59.1103ms 302 
+2018-04-03 21:39:12.564 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-03 21:39:12.565 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 21:39:12.565 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 21:39:12.565 +02:00 [INF] AuthenticationScheme: idsrv was successfully authenticated.
+2018-04-03 21:39:12.565 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-03 21:39:12.566 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-03 21:39:12.569 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 3.3592ms
+2018-04-03 21:39:12.569 +02:00 [INF] Request finished in 4.9584ms 200 text/html; charset=utf-8
+2018-04-03 21:39:12.600 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-03 21:39:12.600 +02:00 [INF] The file /icon.png was not modified
+2018-04-03 21:39:12.600 +02:00 [INF] Request finished in 0.9972ms 304 image/png
