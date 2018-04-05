@@ -87,15 +87,15 @@ namespace IdentityServer
                     AllowedGrantTypes = new[] {GrantType.Hybrid},
                     RedirectUris = new List<string>()
                     {
-                        "https://<clientAppDomain>/signin-oidc"
-                       
+                        "https://localhost:44372/signin-oidc/"
+
                     },
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Email,
-                        "roles" 
+                        
                     },
                     ClientSecrets =
                     {
@@ -104,7 +104,7 @@ namespace IdentityServer
                     //for development, include claims, no need to call userinfo endpoint explicitly yet
                     //including claims will result much bigger token size!!!
                     AlwaysIncludeUserClaimsInIdToken = true,                    
-                    PostLogoutRedirectUris = { "http://<clientAppDomain>/signout-callback-oidc" }
+                    PostLogoutRedirectUris = { "http://localhost:44372/signout-callback-oidc" }
                     
                 }
             };
