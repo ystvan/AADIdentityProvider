@@ -1593,3 +1593,227 @@ System.InvalidOperationException: IDX10803: Unable to obtain configuration from:
 2018-04-03 21:39:12.600 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
 2018-04-03 21:39:12.600 +02:00 [INF] The file /icon.png was not modified
 2018-04-03 21:39:12.600 +02:00 [INF] Request finished in 0.9972ms 304 image/png
+2018-04-05 14:38:36.069 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-05 14:38:36
+2018-04-05 14:38:36.098 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-05 14:38:36
+2018-04-05 14:38:38.180 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-05 14:38:38.356 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-05 14:38:38.906 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-05 14:38:39.257 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-05 14:38:41.753 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-05 14:38:42.178 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 3017.0256ms
+2018-04-05 14:38:42.183 +02:00 [INF] Request finished in 3282.3734ms 200 text/html; charset=utf-8
+2018-04-05 14:38:42.214 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-05 14:38:42.214 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-05 14:38:42.221 +02:00 [INF] The file /lib/bootstrap/css/bootstrap.css was not modified
+2018-04-05 14:38:42.221 +02:00 [INF] The file /icon.png was not modified
+2018-04-05 14:38:42.222 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.jpg  
+2018-04-05 14:38:42.222 +02:00 [INF] The file /icon.jpg was not modified
+2018-04-05 14:38:42.225 +02:00 [INF] Request finished in 2.6316ms 304 image/jpeg
+2018-04-05 14:38:42.225 +02:00 [INF] Request finished in 10.3691ms 304 image/png
+2018-04-05 14:38:42.225 +02:00 [INF] Request finished in 10.3691ms 304 text/css
+2018-04-05 14:41:02.986 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-05 14:41:02
+2018-04-05 14:41:03.012 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-05 14:41:03
+2018-04-05 14:41:04.740 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-05 14:41:04.906 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-05 14:41:05.266 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/  
+2018-04-05 14:41:05.596 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) with arguments (null) - ModelState is "Valid"
+2018-04-05 14:41:07.896 +02:00 [INF] Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+2018-04-05 14:41:08.235 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Index (IdentityServer) in 2727.0268ms
+2018-04-05 14:41:08.239 +02:00 [INF] Request finished in 2977.2478ms 200 text/html; charset=utf-8
+2018-04-05 14:41:49.159 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/.well-known/openid-configuration  
+2018-04-05 14:41:49.200 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-04-05 14:41:49.292 +02:00 [INF] Request finished in 132.5367ms 200 application/json; charset=UTF-8
+2018-04-05 14:41:49.540 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/.well-known/openid-configuration/jwks  
+2018-04-05 14:41:49.541 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-04-05 14:41:49.574 +02:00 [INF] Request finished in 33.9472ms 200 application/json; charset=UTF-8
+2018-04-05 14:41:49.646 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/connect/authorize?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585289096188366.NDA2NDhjMjYtYjdjMC00YTBiLWFhZWMtOWEzMmZmZTA1ODY3MzU5ZTk0OTQtNTJmNi00ZjliLWE0MTktODQxZTAwNjVmOTg1&state=CfDJ8HKHPjRjQPJJr243GDOnfCvvej5d2jkaww88MyGZdKInFMLnPZUmdLcDjpgGGBNPaJplnkO5MPS1vbGBJx2OJo1vRXwKP7FKcQVjyq8KNed_YDZT_TLWTUeorRorc6lDSawHLzk5u6Ce7HZ_FKMZ4Ef2bVDLwhVGDomL1oUlypm0dfqLXoS-F74coDH7sSqJWY5jctDaSAFolFcS_czf9V-Y681RC41OzppqxIMEapaOSoc3jmLL1aNnViQ3ZLY7YrWcJwjMKAJ6_mvL0mcr5f4DPziuv-nzPFP4MCWRlNZRp8DNJ0jmb32iJCbnerX4EoCknEbjHMWZHZFBi9pTBxo&x-client-SKU=ID_NET&x-client-ver=2.1.4.0  
+2018-04-05 14:41:49.651 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-04-05 14:41:49.693 +02:00 [ERR] Invalid redirect_uri: https://localhost:44372/signin-oidc
+{
+  "ClientId": "frontendclientid",
+  "ClientName": "Frontend Client App",
+  "AllowedRedirectUris": [
+    "https://localhost:44372/signin-oidc/"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "frontendclientid",
+    "redirect_uri": "https://localhost:44372/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636585289096188366.NDA2NDhjMjYtYjdjMC00YTBiLWFhZWMtOWEzMmZmZTA1ODY3MzU5ZTk0OTQtNTJmNi00ZjliLWE0MTktODQxZTAwNjVmOTg1",
+    "state": "CfDJ8HKHPjRjQPJJr243GDOnfCvvej5d2jkaww88MyGZdKInFMLnPZUmdLcDjpgGGBNPaJplnkO5MPS1vbGBJx2OJo1vRXwKP7FKcQVjyq8KNed_YDZT_TLWTUeorRorc6lDSawHLzk5u6Ce7HZ_FKMZ4Ef2bVDLwhVGDomL1oUlypm0dfqLXoS-F74coDH7sSqJWY5jctDaSAFolFcS_czf9V-Y681RC41OzppqxIMEapaOSoc3jmLL1aNnViQ3ZLY7YrWcJwjMKAJ6_mvL0mcr5f4DPziuv-nzPFP4MCWRlNZRp8DNJ0jmb32iJCbnerX4EoCknEbjHMWZHZFBi9pTBxo",
+    "x-client-SKU": "ID_NET",
+    "x-client-ver": "2.1.4.0"
+  }
+}
+2018-04-05 14:41:49.696 +02:00 [ERR] Request validation failed
+2018-04-05 14:41:49.696 +02:00 [INF] {
+  "ClientId": "frontendclientid",
+  "ClientName": "Frontend Client App",
+  "AllowedRedirectUris": [
+    "https://localhost:44372/signin-oidc/"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "frontendclientid",
+    "redirect_uri": "https://localhost:44372/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636585289096188366.NDA2NDhjMjYtYjdjMC00YTBiLWFhZWMtOWEzMmZmZTA1ODY3MzU5ZTk0OTQtNTJmNi00ZjliLWE0MTktODQxZTAwNjVmOTg1",
+    "state": "CfDJ8HKHPjRjQPJJr243GDOnfCvvej5d2jkaww88MyGZdKInFMLnPZUmdLcDjpgGGBNPaJplnkO5MPS1vbGBJx2OJo1vRXwKP7FKcQVjyq8KNed_YDZT_TLWTUeorRorc6lDSawHLzk5u6Ce7HZ_FKMZ4Ef2bVDLwhVGDomL1oUlypm0dfqLXoS-F74coDH7sSqJWY5jctDaSAFolFcS_czf9V-Y681RC41OzppqxIMEapaOSoc3jmLL1aNnViQ3ZLY7YrWcJwjMKAJ6_mvL0mcr5f4DPziuv-nzPFP4MCWRlNZRp8DNJ0jmb32iJCbnerX4EoCknEbjHMWZHZFBi9pTBxo",
+    "x-client-SKU": "ID_NET",
+    "x-client-ver": "2.1.4.0"
+  }
+}
+2018-04-05 14:41:49.721 +02:00 [INF] Request finished in 74.8133ms 302 
+2018-04-05 14:41:49.730 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/home/error?errorId=CfDJ8HKHPjRjQPJJr243GDOnfCtA4IRSR77nQuwE8t1n77ytiXTWyxwFQzB-p-2Rs_TggalsEJFG_UHdxYHQ6iP9Zdab0Rg9pPsXcKb7_VcLuHFOB8sw6qZ7HZKGT3qFQudWUnX01lFVeTAAk_fxNkYp1dYf7yhSoVXk_rczWxZ0tSeAU74PxPytSqGjVviaRD2gcoA85mzSlbQT_L8EgYZkMAmfribOfMx2rFGcF-wgSjFmR6P_9CrJ27Xlg2j3q2-eA7MbY9e1GrM0AWKLP16H1nTGGD97QYo6bp0o4ybMnHAoZiSX0TICwyYsUCo0KaOuXA  
+2018-04-05 14:41:49.813 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Error (IdentityServer) with arguments (["CfDJ8HKHPjRjQPJJr243GDOnfCtA4IRSR77nQuwE8t1n77ytiXTWyxwFQzB-p-2Rs_TggalsEJFG_UHdxYHQ6iP9Zdab0Rg9pPsXcKb7_VcLuHFOB8sw6qZ7HZKGT3qFQudWUnX01lFVeTAAk_fxNkYp1dYf7yhSoVXk_rczWxZ0tSeAU74PxPytSqGjVviaRD2gcoA85mzSlbQT_L8EgYZkMAmfribOfMx2rFGcF-wgSjFmR6P_9CrJ27Xlg2j3q2-eA7MbY9e1GrM0AWKLP16H1nTGGD97QYo6bp0o4ybMnHAoZiSX0TICwyYsUCo0KaOuXA"]) - ModelState is "Valid"
+2018-04-05 14:41:49.995 +02:00 [INF] Executing ViewResult, running view at path /Views/Shared/Error.cshtml.
+2018-04-05 14:41:50.003 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Error (IdentityServer) in 243.93820000000002ms
+2018-04-05 14:41:50.003 +02:00 [INF] Request finished in 272.6773ms 200 text/html; charset=utf-8
+2018-04-05 14:41:50.025 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/icon.png  
+2018-04-05 14:41:50.026 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:44300/lib/bootstrap/css/bootstrap.css  
+2018-04-05 14:41:50.030 +02:00 [INF] The file /lib/bootstrap/css/bootstrap.css was not modified
+2018-04-05 14:41:50.030 +02:00 [INF] The file /icon.png was not modified
+2018-04-05 14:41:50.031 +02:00 [INF] Request finished in 4.9828ms 304 text/css
+2018-04-05 14:41:50.031 +02:00 [INF] Request finished in 6.2173ms 304 image/png
+2018-04-05 14:43:09.765 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-05 14:43:09
+2018-04-05 14:43:09.800 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-05 14:43:09
+2018-04-05 14:43:11.595 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-05 14:43:11.764 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-05 14:47:36.681 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/.well-known/openid-configuration  
+2018-04-05 14:47:36.812 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-04-05 14:47:36.922 +02:00 [INF] Request finished in 245.5731ms 200 application/json; charset=UTF-8
+2018-04-05 14:47:37.188 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/.well-known/openid-configuration/jwks  
+2018-04-05 14:47:37.219 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-04-05 14:47:37.278 +02:00 [INF] Request finished in 90.443ms 200 application/json; charset=UTF-8
+2018-04-05 14:47:37.335 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/connect/authorize?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585292573221545.NGY4MzQyMjItMWFhYy00OWQwLWJhMDAtY2MzZDQ1YTk2NjNjM2EzMzhlNzItOWMzMi00NDg5LWE1Y2UtOGMyNDhkMTdlZTgz&state=CfDJ8HKHPjRjQPJJr243GDOnfCtDlBHXuLo6cDjV_AsorZAWM65s3RxtYZuzvl2Mp1SfW9ReT5LQ9588fMeSNZGcmrwx4-1zMFbjB_ICPoV3JOnEoXgMcbI4C44o43jISHQ0H9M7Oh1_SKxk38zqbYp6jtUdUwUf9Y7xs88kF_pTX6OA68mCha-JcBUMq1cdnGwrKpdQX_YU4ePbZjQ1HYouGP-VwO_OmKACw49j8njF_czud0o6CtC93z5pmRJzD_5ZEp43vP-GFpvJwFoKy9HxDLaufQ6lMenjsssGKtMqGZXOequKW5GZ8VoI4arB7qF_MgMdxaE2eLiPvEOIZTtPbGg&x-client-SKU=ID_NET&x-client-ver=2.1.4.0  
+2018-04-05 14:47:37.341 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-04-05 14:47:37.386 +02:00 [ERR] Invalid redirect_uri: https://localhost:44372/signin-oidc
+{
+  "ClientId": "frontendclientid",
+  "ClientName": "Frontend Client App",
+  "AllowedRedirectUris": [
+    "https://localhost:44372/signin-oidc/"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "frontendclientid",
+    "redirect_uri": "https://localhost:44372/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636585292573221545.NGY4MzQyMjItMWFhYy00OWQwLWJhMDAtY2MzZDQ1YTk2NjNjM2EzMzhlNzItOWMzMi00NDg5LWE1Y2UtOGMyNDhkMTdlZTgz",
+    "state": "CfDJ8HKHPjRjQPJJr243GDOnfCtDlBHXuLo6cDjV_AsorZAWM65s3RxtYZuzvl2Mp1SfW9ReT5LQ9588fMeSNZGcmrwx4-1zMFbjB_ICPoV3JOnEoXgMcbI4C44o43jISHQ0H9M7Oh1_SKxk38zqbYp6jtUdUwUf9Y7xs88kF_pTX6OA68mCha-JcBUMq1cdnGwrKpdQX_YU4ePbZjQ1HYouGP-VwO_OmKACw49j8njF_czud0o6CtC93z5pmRJzD_5ZEp43vP-GFpvJwFoKy9HxDLaufQ6lMenjsssGKtMqGZXOequKW5GZ8VoI4arB7qF_MgMdxaE2eLiPvEOIZTtPbGg",
+    "x-client-SKU": "ID_NET",
+    "x-client-ver": "2.1.4.0"
+  }
+}
+2018-04-05 14:47:37.392 +02:00 [ERR] Request validation failed
+2018-04-05 14:47:37.392 +02:00 [INF] {
+  "ClientId": "frontendclientid",
+  "ClientName": "Frontend Client App",
+  "AllowedRedirectUris": [
+    "https://localhost:44372/signin-oidc/"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "frontendclientid",
+    "redirect_uri": "https://localhost:44372/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636585292573221545.NGY4MzQyMjItMWFhYy00OWQwLWJhMDAtY2MzZDQ1YTk2NjNjM2EzMzhlNzItOWMzMi00NDg5LWE1Y2UtOGMyNDhkMTdlZTgz",
+    "state": "CfDJ8HKHPjRjQPJJr243GDOnfCtDlBHXuLo6cDjV_AsorZAWM65s3RxtYZuzvl2Mp1SfW9ReT5LQ9588fMeSNZGcmrwx4-1zMFbjB_ICPoV3JOnEoXgMcbI4C44o43jISHQ0H9M7Oh1_SKxk38zqbYp6jtUdUwUf9Y7xs88kF_pTX6OA68mCha-JcBUMq1cdnGwrKpdQX_YU4ePbZjQ1HYouGP-VwO_OmKACw49j8njF_czud0o6CtC93z5pmRJzD_5ZEp43vP-GFpvJwFoKy9HxDLaufQ6lMenjsssGKtMqGZXOequKW5GZ8VoI4arB7qF_MgMdxaE2eLiPvEOIZTtPbGg",
+    "x-client-SKU": "ID_NET",
+    "x-client-ver": "2.1.4.0"
+  }
+}
+2018-04-05 14:47:37.418 +02:00 [INF] Request finished in 83.6459ms 302 
+2018-04-05 14:47:37.431 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/home/error?errorId=CfDJ8HKHPjRjQPJJr243GDOnfCt5B3DEeA0UpmYpgRDETz-FVAmF80BZaf-RqPWWjALiFvxWXw5Tg-F3_nbThEygXaFDSUfmDF2yIW--yb3nDh29ubRdMsTIyxcLMfbtsqKrdzjY-H4lBTnt075zr02QIq8bn70amuwFpzzzucz8Kq3RJ6BVVH2M_NR2lg9_Dry4NJ0PcpGUk0EQG5tz4EwxWVDnpsrmjCR1l-94Rq_sXWdDkn2J_Q9abTHao9od6k0vSivhlQ0yqjsenrMTuNre0JpjcTRb5ysGEuMicKnbzijb5FjMpchf4mfSN3jIkPaItQ  
+2018-04-05 14:47:37.672 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.HomeController.Error (IdentityServer) with arguments (["CfDJ8HKHPjRjQPJJr243GDOnfCt5B3DEeA0UpmYpgRDETz-FVAmF80BZaf-RqPWWjALiFvxWXw5Tg-F3_nbThEygXaFDSUfmDF2yIW--yb3nDh29ubRdMsTIyxcLMfbtsqKrdzjY-H4lBTnt075zr02QIq8bn70amuwFpzzzucz8Kq3RJ6BVVH2M_NR2lg9_Dry4NJ0PcpGUk0EQG5tz4EwxWVDnpsrmjCR1l-94Rq_sXWdDkn2J_Q9abTHao9od6k0vSivhlQ0yqjsenrMTuNre0JpjcTRb5ysGEuMicKnbzijb5FjMpchf4mfSN3jIkPaItQ"]) - ModelState is "Valid"
+2018-04-05 14:47:39.822 +02:00 [INF] Executing ViewResult, running view at path /Views/Shared/Error.cshtml.
+2018-04-05 14:47:40.385 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.HomeController.Error (IdentityServer) in 2818.3795ms
+2018-04-05 14:47:40.390 +02:00 [INF] Request finished in 2959.0189ms 200 text/html; charset=utf-8
+2018-04-05 14:47:40.407 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/lib/bootstrap/css/bootstrap.css  
+2018-04-05 14:47:40.410 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\css\bootstrap.css'
+2018-04-05 14:47:40.425 +02:00 [INF] Request finished in 17.7726ms 200 text/css
+2018-04-05 14:47:40.435 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/css/site.css  
+2018-04-05 14:47:40.437 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\css\site.css'
+2018-04-05 14:47:40.440 +02:00 [INF] Request finished in 5.4015ms 200 text/css
+2018-04-05 14:47:40.451 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/icon.png  
+2018-04-05 14:47:40.453 +02:00 [INF] Sending file. Request path: '/icon.png'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\icon.png'
+2018-04-05 14:47:40.455 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/lib/jquery/jquery.js  
+2018-04-05 14:47:40.455 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/lib/bootstrap/js/bootstrap.js  
+2018-04-05 14:47:40.457 +02:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\bootstrap\js\bootstrap.js'
+2018-04-05 14:47:40.459 +02:00 [INF] Request finished in 7.16ms 200 image/png
+2018-04-05 14:47:40.485 +02:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\lib\jquery\jquery.js'
+2018-04-05 14:47:40.485 +02:00 [INF] Request finished in 29.317ms 200 application/javascript
+2018-04-05 14:47:40.512 +02:00 [INF] Request finished in 56.6061ms 200 application/javascript
+2018-04-05 14:47:45.505 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/favicon.ico  
+2018-04-05 14:47:45.507 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\root\source\repos\KEA\DLS\AADIdentityProvider\src\IdentityServer\wwwroot\favicon.ico'
+2018-04-05 14:47:45.520 +02:00 [INF] Request finished in 14.1653ms 200 image/x-icon
+2018-04-05 14:49:32.166 +02:00 [INF] Starting Identity Provider Server App ... at 2018-04-05 14:49:32
+2018-04-05 14:49:32.194 +02:00 [INF] Identity Provider Server App started successfully ... at 2018-04-05 14:49:32
+2018-04-05 14:49:33.856 +02:00 [INF] User profile is available. Using 'C:\Users\root\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-04-05 14:49:34.011 +02:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-04-05 14:50:23.046 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/.well-known/openid-configuration  
+2018-04-05 14:50:23.167 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-04-05 14:50:23.270 +02:00 [INF] Request finished in 228.6908ms 200 application/json; charset=UTF-8
+2018-04-05 14:50:23.520 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/.well-known/openid-configuration/jwks  
+2018-04-05 14:50:23.565 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-04-05 14:50:23.604 +02:00 [INF] Request finished in 83.9144ms 200 application/json; charset=UTF-8
+2018-04-05 14:50:23.661 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/connect/authorize?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3&state=CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw&x-client-SKU=ID_NET&x-client-ver=2.1.4.0  
+2018-04-05 14:50:23.668 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-04-05 14:50:23.757 +02:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "frontendclientid",
+  "ClientName": "Frontend Client App",
+  "RedirectUri": "https://localhost:44372/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:44372/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile email",
+  "State": "CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw",
+  "Nonce": "636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3",
+  "Raw": {
+    "client_id": "frontendclientid",
+    "redirect_uri": "https://localhost:44372/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile email",
+    "response_mode": "form_post",
+    "nonce": "636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3",
+    "state": "CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw",
+    "x-client-SKU": "ID_NET",
+    "x-client-ver": "2.1.4.0"
+  }
+}
+2018-04-05 14:50:23.769 +02:00 [INF] Showing login: User is not authenticated
+2018-04-05 14:50:23.775 +02:00 [INF] Request finished in 114.5047ms 302 
+2018-04-05 14:50:23.787 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dfrontendclientid%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44372%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3%26state%3DCfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw%26x-client-SKU%3DID_NET%26x-client-ver%3D2.1.4.0  
+2018-04-05 14:50:24.026 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["/connect/authorize/callback?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3&state=CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw&x-client-SKU=ID_NET&x-client-ver=2.1.4.0"]) - ModelState is "Valid"
+2018-04-05 14:50:26.730 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-05 14:50:27.180 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 3258.4511ms
+2018-04-05 14:50:27.184 +02:00 [INF] Request finished in 3396.4958ms 200 text/html; charset=utf-8
+2018-04-05 14:50:29.794 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dfrontendclientid%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44372%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3%26state%3DCfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw%26x-client-SKU%3DID_NET%26x-client-ver%3D2.1.4.0  
+2018-04-05 14:50:29.823 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) with arguments (["/connect/authorize/callback?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3&state=CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw&x-client-SKU=ID_NET&x-client-ver=2.1.4.0"]) - ModelState is "Valid"
+2018-04-05 14:50:29.829 +02:00 [INF] Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+2018-04-05 14:50:29.833 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.Login (IdentityServer) in 34.098600000000005ms
+2018-04-05 14:50:29.835 +02:00 [INF] Request finished in 41.4133ms 200 text/html; charset=utf-8
+2018-04-05 14:50:37.846 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:49573/account/ExternalLogin?provider=AAD&returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dfrontendclientid%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44372%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520email%26response_mode%3Dform_post%26nonce%3D636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3%26state%3DCfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw%26x-client-SKU%3DID_NET%26x-client-ver%3D2.1.4.0  
+2018-04-05 14:50:37.875 +02:00 [INF] Executing action method IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) with arguments (["AAD","/connect/authorize/callback?client_id=frontendclientid&redirect_uri=https%3A%2F%2Flocalhost%3A44372%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20email&response_mode=form_post&nonce=636585294236485690.NWY0ZGI3ZTAtZjAzNi00MjY4LTgwNzAtYmEwZmU3ODM5YzhiNWE3MDllZWYtNTg3Ny00Nzg5LTk3ODUtMGJkNDcxZDg3MDk3&state=CfDJ8HKHPjRjQPJJr243GDOnfCuO2lajST8FV3Xn3cuaOsqwLqXertkEXpG9jv_2nshsJUWPaxWC7CqLBtvn7ISsnkgClZgJ6Gv7p6hoKoovMqieZ5gBuR0gBzgNm7FRxLxvYWzHjY224HANtFoUSCHSNsZmQD_LuMR74wzxhKyv7DJDHDeVmgQz-96inHKvE_QEW_UxWx0ACxuzceafHxkxNj6HhnlV7pht8vfD7aPK7fAEXLNwKl06Hnh-fwJLvjbpQ5Vfz1RVU5hudY48jius53ghEfxqzeSGKZK-5wkH2NFJOD3SVbOF_JpKAwngCpw2h7BxPTEs0fOcfwnEQNnvtNw&x-client-SKU=ID_NET&x-client-ver=2.1.4.0"]) - ModelState is "Valid"
+2018-04-05 14:50:37.881 +02:00 [INF] Executing ChallengeResult with authentication schemes (["AAD"]).
+2018-04-05 14:50:38.355 +02:00 [INF] AuthenticationScheme: AAD was challenged.
+2018-04-05 14:50:38.358 +02:00 [INF] Executed action IdentityServer4.Quickstart.UI.AccountController.ExternalLogin (IdentityServer) in 502.9485ms
+2018-04-05 14:50:38.360 +02:00 [INF] Request finished in 513.9087ms 302 

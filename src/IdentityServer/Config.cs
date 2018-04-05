@@ -87,7 +87,7 @@ namespace IdentityServer
                     AllowedGrantTypes = new[] {GrantType.Hybrid},
                     RedirectUris = new List<string>()
                     {
-                        "https://localhost:44372/signin-oidc/"
+                        "https://localhost:44372/signin-oidc"
 
                     },
                     AllowedScopes =
