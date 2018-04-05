@@ -32,7 +32,7 @@ namespace IdentityServer
 
             services
                 .AddIdentityServer()
-                .AddDeveloperSigningCredential()
+                .AddDeveloperSigningCredential(filename: "tempkey.rsa")
                 .AddTestUsers(Config.GetUsers())
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources())
