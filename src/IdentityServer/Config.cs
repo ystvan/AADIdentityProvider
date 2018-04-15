@@ -23,16 +23,16 @@ namespace IdentityServer
                 new TestUser
                 {
                     SubjectId = "70577986-a27e-45d6-88e6-de8325eae09a",
-                    Username = "bob",
+                    Username = "admin",
                     Password = "password",
 
                     //Initializes a new instance of the System.Security.Claims.Claim class with the
                     //specified claim type and value.
                     Claims = new List<Claim>
                     {
-                        new Claim("given_name", "Bob"),
+                        new Claim("given_name", "Kea"),
                         new Claim("family_name", "Smith"),
-                        new Claim("email", "alice@gmail.com"),
+                        new Claim("email", "kea@gmail.com"),
                         new Claim("email_verified", "true"),
                         new Claim("role", "Admin"),
                     }
@@ -82,12 +82,12 @@ namespace IdentityServer
             {
                 new Client
                 {
-                    ClientName = "Frontend Client App",
-                    ClientId = "frontendclientid",
+                    ClientName = "KEA Client App",
+                    ClientId = "keaclient-sysint-1",
                     AllowedGrantTypes = new[] {GrantType.Hybrid},
                     RedirectUris = new List<string>()
                     {
-                        "https://localhost:44372/signin-oidc"
+                        "https://localhost:44358/signin-oidc"
 
                     },
                     AllowedScopes =
@@ -99,12 +99,12 @@ namespace IdentityServer
                     },
                     ClientSecrets =
                     {
-                        new Secret("mysupersecret".Sha256())
+                        new Secret("@mysupersecret321$".Sha256())
                     },
                     //for development, include claims, no need to call userinfo endpoint explicitly yet
                     //including claims will result much bigger token size!!!
                     AlwaysIncludeUserClaimsInIdToken = true,                    
-                    PostLogoutRedirectUris = { "https://localhost:44372/signout-callback-oidc" }
+                    PostLogoutRedirectUris = { "https://localhost:44358/signout-callback-oidc" }
                     
                 }
             };
