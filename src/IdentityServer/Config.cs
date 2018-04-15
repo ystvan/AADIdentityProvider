@@ -55,9 +55,7 @@ namespace IdentityServer
 
                 //additional scopes (optional)
                 new IdentityResources.Profile(),
-                new IdentityResources.Email(),
-                new IdentityResources.Phone(),
-                new IdentityResources.Address()
+                new IdentityResources.Email(),                
                 
             };
         }
@@ -97,11 +95,7 @@ namespace IdentityServer
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Email,
-                        IdentityServerConstants.StandardScopes.Address,
-                        IdentityServerConstants.StandardScopes.Phone,
-                        IdentityServerConstants.StandardScopes.OfflineAccess
-
-
+                        
                     },
                     ClientSecrets =
                     {
