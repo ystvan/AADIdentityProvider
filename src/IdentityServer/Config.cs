@@ -89,7 +89,7 @@ namespace IdentityServer
                     AllowedGrantTypes = new[] {GrantType.Hybrid},
                     RedirectUris = new List<string>()
                     {
-                        "https://localhost:44358/signin-oidc"
+                        "https://sysint-webapp.azurewebsites.net/signin-oidc"
 
                     },
                     AllowedScopes =
@@ -110,7 +110,7 @@ namespace IdentityServer
                     //for development, include claims, no need to call userinfo endpoint explicitly yet
                     //including claims will result much bigger token size!!!
                     AlwaysIncludeUserClaimsInIdToken = true,                    
-                    PostLogoutRedirectUris = { "https://localhost:44358/signout-callback-oidc" }
+                    PostLogoutRedirectUris = { "https://sysint-webapp.azurewebsites.net/signout-callback-oidc" }
                     
                 }
             };
