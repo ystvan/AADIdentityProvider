@@ -48,6 +48,8 @@ namespace IdentityServer
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                     options.Scope.Add("email");
+                    options.Scope.Add("phone");
+                    options.Scope.Add("address");
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuer = false
